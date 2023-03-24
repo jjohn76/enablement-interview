@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact, col-2
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -14,10 +15,6 @@ If multiple charsets are specified, all of the `charsets` will be combined and d
 
 ><span style="background-color:#fff9e8">After combining and de-duplicating charsets, the length of the charset that candidate passwords are generated from must be no longer than 256 characters.</span>
 
-```
-
 ???
 
 The charset rule allows you to specify a minimum number of characters for a given charset.
-
----

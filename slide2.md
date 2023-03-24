@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -27,5 +28,3 @@ Candidate password generation is extremely important to Hashicorp. We have a set
 
 3. The length of the password.
 
-
----

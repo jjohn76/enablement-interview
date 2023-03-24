@@ -49,24 +49,35 @@ Consul     #CA2171
            'slide4.md',
            'slide5.md',
            'slide6.md',
-           'slide7.md',
+           'slide7.md'
            ]
 
        var xmlhttp = new XMLHttpRequest();
-       var source = ""
+
+
+       var sourceTextArea = ""
        for (var i = 0; i < sourceUrls.length; i++) {
            xmlhttp.open('GET', sourceUrls[i], false);
            xmlhttp.send();
-           source += xmlhttp.responseText;
+           sourceTextArea += xmlhttp.responseText;
            // Files shouldn't have --- at the head or foot
            // It is added automatically here
            if (i + 1 < sourceUrls.length) {
-             source += "---"
+            sourceTextArea += "---"
            }
        };
-
        // Logging source which should represent the --- separated slides
-       console.log(source)
+
+
+        /* 
+       Instead of loading the source text area as a string for the remark.create(),
+       I build a <textarea> with the id as source to load it the traditional way
+        */
+       const textarea = document.createElement('textarea');
+       textarea.setAttribute("id", "source")
+       textarea.innerHTML = sourceTextArea;
+       document.body.appendChild(textarea);
+       console.log(sourceTextArea);
        var slideshow = remark.create({
             ratio: '16:9',
             highlightLines: 'true',
@@ -81,7 +92,9 @@ Consul     #CA2171
             },
 
             // highlightStyle: 'solarized-dark', // This requires the highlight .remark-code-line-highlighted and .remark-code-span-highlighted style classes to match color scheme
-            source: source
+            /* This is where the problem lies. It seems like Remark.js doesn't support loading a .md file as string natively.
+            */
+            // source: source
         });
 
         // Turn code blocks (actually, any <pre> tag) into a fake terminal window with macOS-like title bar

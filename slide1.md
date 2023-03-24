@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -28,4 +29,3 @@ Length - Fundamentally a set length for the password.
 
 Set of Rules - A rule is an assertion upon a candidate password string that indicates if the password is good or not. Example would be a charset rule that requires a password needs to have at least 1 lowercase letter in it.
 
----

@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact, col-2
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -20,4 +21,3 @@ The graph shows some example policy configurations with their performance.![scal
 
 The general rule with password generation is the more restrictive the password policy, the longer it will take to generate a password. The graph on the right shows some common password policies and their performance
 
----

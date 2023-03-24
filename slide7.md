@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -13,10 +14,6 @@ Hashicorp provides a step-by-step [tutorial](https://developer.hashicorp.com/vau
 For more information on Vault and everything it provides, please visit the Vault official [docs](https://developer.hashicorp.com/vault/docs) page.
 
 
-```
-
 ???
 
 Wrap up presentation and provide further readings and documentation links.
-
----

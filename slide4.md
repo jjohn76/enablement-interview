@@ -1,4 +1,5 @@
-layout: true
+
+layout: false
 class: compact
 background-image: url(../../assets/images/backgrounds/HashiCorp-Content-bkg.png)
 background-size: cover
@@ -24,4 +25,3 @@ rule "charset" {
 ???
 Password policies can be defined in HCL or JSON. You provide the length of the password and the set of rules the password must follow. The code shows a very simple policy in HCL.
 
----
