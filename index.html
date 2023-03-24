@@ -45,6 +45,11 @@ Consul     #CA2171
            'title.md',
            'slide1.md',
            'slide2.md',
+           'slide3.md',
+           'slide4.md',
+           'slide5.md',
+           'slide6.md',
+           'slide7.md',
            ]
 
        var xmlhttp = new XMLHttpRequest();
@@ -59,6 +64,9 @@ Consul     #CA2171
              source += "---"
            }
        };
+
+       // Logging source which should represent the --- separated slides
+       console.log(source)
        var slideshow = remark.create({
             ratio: '16:9',
             highlightLines: 'true',
