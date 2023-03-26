@@ -13,6 +13,9 @@ Hashicorp provides a step-by-step [tutorial](https://developer.hashicorp.com/vau
 
 For more information on Vault and everything it provides, please visit the Vault official [docs](https://developer.hashicorp.com/vault/docs) page.
 
+.footer[
+- Presented by John An
+]
 
 ???
 

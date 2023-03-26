@@ -10,6 +10,11 @@ count: true
 
 How a candidate password is generated is extremely important. Great care must be placed to ensure that passwords aren't created in a way that can be exploited by threat actors. This section describes how we generate passwords within password policies to ensure that passwords are generated as securely as possible.
 
+???
+
+Candidate password generation is extremely important to Hashicorp. Hashicorp has a set of processes that goes into password generation which requires 3 things.
+--
+
 To generate a candidate password, three things are needed:
 
 1. A [cryptographically secure random number generator](https://pkg.go.dev/crypto/rand) (RNG).
@@ -20,11 +25,8 @@ To generate a candidate password, three things are needed:
 
 ???
 
-Candidate password generation is extremely important to Hashicorp. We have a set of processes that goes into password generation which requires 3 things.
-
 1. A [cryptographically secure random number generator](https://pkg.go.dev/crypto/rand) (RNG).
 
 2. A character set (charset) to select characters from.
 
 3. The length of the password.
-

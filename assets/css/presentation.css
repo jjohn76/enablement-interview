@@ -1,0 +1,30 @@
+.available-rules-parameters {
+  font-size: 15px;
+}
+
+.available-rules-charset {
+  font-size: 25px;
+}
+
+.design-text {
+  font-size: 80%;
+}
+
+.design-flow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.performance-chart {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.performance-text {
+  font-size: 90%;
+}

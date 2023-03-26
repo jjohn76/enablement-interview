@@ -6,8 +6,8 @@ paginate: true
 layout: false
 
 
-<!-- Image example -->
 ![:scale 20%](./assets/logos/HashiCorp_Enterprise_Academy_Vertical_White_RGB.png)
+
 
 # Vault Password Policies
 
